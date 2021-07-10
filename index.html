@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cashout Manual</title>
+</head>
+<body>
+    <header>
+        <h1>CASHOUT MANUAL</h1>
+    </header>
+
+    <section>
+        <div id="bet-feita">
+            <h2>Sobre a aposta que você quer encerrar:</h2>
+            <p>Odd:
+                <input type="number" name="odd" id="odd" class="box">
+            </p>
+            <p>Valor apostado: R$
+                <input type="number" name="valor" id="valor"  class="box">
+            </p>
+        </div>
+
+        <div id="bet-nova">
+            <h2>Agora preciso que você procure a aposta que é oposta a sua:</h2>
+            <p>Odd da aposta OPOSTA:
+                <input type="number" name="odd-nova" id="odd-nova" class="box">
+            </p>
+            <input type="button" value="Enviar" onclick="enviar()">
+        </div>
+
+        <div id="res"></div>
+    </section>
+
+    <footer>&copy;2021 LucasVerissimo</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
